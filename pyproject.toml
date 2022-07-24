@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "trebuchet"
+version = "0.1.0"
+description = ""
+authors = ["codenomad <codenomad@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.1"
+kubernetes = "^24.2.0"
+fastapi = "^0.79.0"
+pydantic = "^1.9.1"
+uvicorn = "^0.18.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^3.0.0"
+coverage = "^6.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+trebuchet = "trebuchet:main"
